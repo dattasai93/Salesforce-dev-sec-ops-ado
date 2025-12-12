@@ -12,6 +12,8 @@ stages:
     jobs:
       - job: buildJob
         steps:
+          - checkout: self
+            fetchDepth: 0
           - script: echo build Job
             displayName: Print Information
           - script: npm install
