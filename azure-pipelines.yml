@@ -18,8 +18,6 @@ stages:
             displayName: Print Information
           - script: npm install
             displayName: Install npm
-          - checkout: self
-            fetchDepth: 0
           - script: |
               echo Add other tasks to build, test, and deploy your project.
               echo See https://aka.ms/yaml
