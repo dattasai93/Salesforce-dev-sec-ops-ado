@@ -22,6 +22,8 @@ stages:
           - script: |
               npm install @salesforce/cli --global
               sf --version
+          - checkout: self
+            fetchDepth: 0
   - stage: deploy
     jobs:
       - job: deployJob
